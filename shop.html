@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+      <title>NiFTy</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+         />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=No">
+   </head>
+   <body>
+<!--header-start-->
+<div class="section">
+	<div class="container">
+<nav>
+  <div>
+    <a href="index.html"><img src="images/l1.png"></a>
+  </div>
+  <div>
+    <ul id="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+      <li><a href="collections.html">Collections</a></li>
+	  <li><a href="shop.html">Shop</a></li>
+      <li><a href="pages.html">Pages</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	  <li><button href="#">Join Discord <i class="fa-solid fa-arrow-right"></i></button></li>
+    </ul>
+  </div>
+    <div class="menu" id="menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+<div class="header-button">
+					<a href="#">Join Discord <i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+				</nav>
+	</div>
+</div>
+
+<script>// For toggling and finding number of children and other stuff is done here!
+
+const navigation = document.getElementById("nav");
+const menu = document.getElementById("menu");
+
+menu.addEventListener("click", () => {
+  // The navigation.children.length means the following :-
+  // The children inside a parent are basically an array of elements; So, here I'm finding the length of the array aka how many children are inside the nav bar.
+  //   Yup That's all.
+  navigation.style.setProperty("--childenNumber", navigation.children.length);
+
+  //    Casually Toggling Classes to make them animate on click
+  //   Regular stuff ;)
+  navigation.classList.toggle("active");
+  menu.classList.toggle("active");
+});
+</script>
+<!--header-end-->
+<!--section-start-1-->
+<div class="shop-1">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="section-roadmap">
+					<h3>Shop</h3>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<div class="section-roadmap-1">
+					<ul>
+						<li><i class="fa-solid fa-house"></i> home</li>
+						<li><i class="fa-solid fa-angle-right"></i></li>
+						<li>Shop</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--section-end-1-->
+<!--header-start-7-->
+<div class="header-7">
+	<div class="container">
+		<div class="tempor">
+			<p>MERCHANDISE</p>
+			<h3>Merchandise</h3>
+			<div class="Mercha">
+				<p>Eget nulla phasellus odio sit porttitor enatibus aliquam blandit gravida <br>ultricies eleifend varius tempor vulputate malesuada tristique.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="loop-product">
+					<img src="images/m1.png">
+					<h3>Massa volutpat enim amet<h3>
+					<p>$46</p>
+					<a href="#">add to cart</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="loop-product">
+					<img src="images/m2.png">
+					<h3>Massa volutpat enim amet<h3>
+					<p>$46</p>
+					<a href="#">add to cart</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="loop-product">
+					<img src="images/m3.png">
+					<h3>Massa volutpat enim amet<h3>
+					<p>$46</p>
+					<a href="#">add to cart</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="loop-product">
+					<img src="images/m4.png">
+					<h3>Massa volutpat enim amet<h3>
+					<p>$46</p>
+					<a href="#">add to cart</a>
+				</div>
+			</div>
+		</div>
+		<div class="Merchandise-1">
+			<div class="Merchandise">
+				<h3>Merchandise 50% Off</h3>
+				<p>Eget nulla phasellus odio sit porttitor enatibus aliquam blandit</p>
+			</div>
+			<div class="Merchandise-button">
+				<a href="#">explore now <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--header-end-7-->
+<!--footer-start-->		
+<div class="footer">
+	<div class="container">
+		<div class="footer-1">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="News-footer">
+						<p>NEWSLETTER</p>
+						<h3>Join Our Newsletter</h3>
+					</div>
+					<div class="join-us">
+						<p>Eget nulla phasellus odio sit porttitor enatibus aliquam</p>
+					</div>
+					<div class="label-main">
+						<div class="label-email">
+							<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Email address" required="required" aria-required="true">
+						</div>
+						<div class="lebel-button">
+							<a href="#">subscribe <i class="fa-solid fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer-logo">
+						<img src="images/logo.png">
+						<p>Eget nulla phasellus odio sit porttitor enatibus aliquam blandit gravida ultricies eleifend varius tempor</p>
+					</div>
+					<div class="footer-icon">
+						<ul>
+							<li><i class="fa-brands fa-facebook-f"></i></li>
+							<li><i class="fa-brands fa-twitter"></i></li>
+							<li><i class="fa-brands fa-instagram"></i></li>
+							<li><i class="fa-brands fa-linkedin"></i></li>
+							<li><i class="fa-brands fa-tiktok"></i></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="footer-tempor">
+						<h3>Quick Menu</h3>
+					</div>
+					<div class="footer-tempor-1">
+						<li>About</li>
+						<li>Collection</li>
+						<li>Roadmap</li>
+						<li>Blog</li>
+						<li>Contact</li>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="reserved">
+			<div class="footer-reserved">
+				<h3>Copyright © NiFTy | All rights reserved</h3>
+			</div>
+			<div class="footer-reserved-1">
+				<ul>
+					<li>Privacy Policy</li>
+					<li>Cookies</li>
+					<li>Terms & Conditions</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--footer-end-->		
+			
+					
+			
+	</body>
+</html>

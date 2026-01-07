@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register / Login Form</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .user-panel {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+      position: relative;
+    }
+
+    .form-heading {
+      text-align: center;
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    .field {
+      margin-bottom: 15px;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 5px;
+      margin-left: 10px;
+    }
+
+    .field input {
+      width: 94%;
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid #737373;
+    }
+
+    .buttons button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .buttons button:hover {
+      background: #0056b3;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    footer label {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      background: #eaeaea;
+      margin: 0 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer label:hover {
+      background: #ccc;
+    }
+
+    form > div,
+    .buttons button,
+    .form-heading {
+      display: none;
+    }
+
+    /* Show Register section */
+    #register-tab:checked ~ form .register-field,
+    #register-tab:checked ~ form .register-btn,
+    #register-tab:checked ~ form .register-heading {
+      display: block;
+    }
+
+    /* Show Login section */
+    #login-tab:checked ~ form .login-field,
+    #login-tab:checked ~ form .login-btn,
+    #login-tab:checked ~ form .login-heading {
+      display: block;
+    }
+
+    #register-tab:checked ~ footer label[for="register-tab"],
+    #login-tab:checked ~ footer label[for="login-tab"] {
+      background: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="user-panel">
+
+    <!-- Tabs -->
+    <input type="radio" id="register-tab" name="panel" checked>
+    <input type="radio" id="login-tab" name="panel">
+
+    <!-- Unified Form -->
+    <form onsubmit="return false;">
+
+      <!-- Register Heading -->
+      <h2 class="form-heading register-heading">Register</h2>
+
+      <!-- Register Fields -->
+      <div class="field register-field">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="field register-field">
+        <label for="email-register">Email</label>
+        <input type="email" id="email-register" required>
+      </div>
+      <div class="field register-field">
+        <label for="password-register">Password</label>
+        <input type="password" id="password-register" required>
+      </div>
+      <div class="field register-field">
+        <label for="repeat-password">Repeat Password</label>
+        <input type="password" id="repeat-password" required>
+      </div>
+
+      <!-- Login Heading -->
+      <h2 class="form-heading login-heading">Login</h2>
+
+      <!-- Login Fields -->
+      <div class="field login-field">
+        <label for="email-login">Email</label>
+        <input type="email" id="email-login" required>
+      </div>
+      <div class="field login-field">
+        <label for="password-login">Password</label>
+        <input type="password" id="password-login" required>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttons register-btn">
+        <button type="submit">Register</button>
+      </div>
+      <div class="buttons login-btn">
+        <button type="submit">Login</button>
+      </div>
+
+    </form>
+
+    <!-- Footer Toggle -->
+    <footer>
+      <label for="register-tab">Register</label>
+      <label for="login-tab">Login</label>
+    </footer>
+
+  </section>
+
+</body>
+</html>
